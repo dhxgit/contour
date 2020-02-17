@@ -497,13 +497,13 @@ spec:
     - services:
         - name: s1
           port: 80
-          requestHeaderPolicy:
+          requestHeadersPolicy:
             set:
               - name: X-Foo
                 value: bar
             remove:
               - X-Baz
-          responseHeaderPolicy:
+          responseHeadersPolicy:
             set:
               - name: X-Service-Name
                 value: s1
